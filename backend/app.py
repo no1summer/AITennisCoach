@@ -77,7 +77,7 @@ def analyze_video_route():
         # 4. Prompt Gemini with the video
         print("File uploaded and processed. Prompting Gemini...")
         model = genai.GenerativeModel(
-            model_name="gemini-2.5-pro", # Or gemini-2.5-pro when available
+            model_name="gemini-2.5-pro", 
             system_instruction=SYSTEM_PROMPT
         )
         
