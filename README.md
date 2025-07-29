@@ -1,1 +1,3 @@
 # AITennisCoach
+This is the repo for sharing the update regarding my IOS app AITennisCoach development. The main purpose for the app is to give people an idea of their NRTP rank if they are not enrolled in the league but want to know their level as well as get improved by sepcific advices
+The backend of the app is powered by Gemini-2.5-pro. Sepcific prompting and vidoe processing would speed up the whole process 2x, yet it takes ~30s processing time for a ~30s video input. Now given the limitation as resources, I release this as an early version test model. I will keep improve that and published it in the near future so everyone could test. Please see the following video for the early test result. Any feedback would be appreciated. 
