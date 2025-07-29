@@ -1,3 +1,6 @@
+# This backend is directly prompting on compressed-video, so the average process time would be 10-20s longer than the app_pose.py
+# Mark out the main if you would like to use gunicorn for a better server experience: gunicorn --bind 0.0.0.0:5001 --timeout 300 app:app
+
 import os
 import google.generativeai as genai
 from flask import Flask, request, jsonify
@@ -6,7 +9,8 @@ import time
 # --- Configuration ---
 # Set your Google AI API Key here
 # It's recommended to use environment variables for production
-genai.configure(api_key="") #update with your own api_key
+api_key = os.environ.get("GOOGLE_API_KEY")
+genai.configure(api_key=api_key) 
 
 # Create a folder to temporarily store video uploads
 UPLOAD_FOLDER = 'uploads'
