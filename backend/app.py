@@ -6,7 +6,7 @@ import time
 # --- Configuration ---
 # Set your Google AI API Key here
 # It's recommended to use environment variables for production
-genai.configure(api_key="AIzaSyBPMi7QoVJKom2o5BV4eZfDGHBHE0_o6_g")
+genai.configure(api_key="") #update with your own api_key
 
 # Create a folder to temporarily store video uploads
 UPLOAD_FOLDER = 'uploads'
